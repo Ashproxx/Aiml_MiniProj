@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#146f63">
+  <meta name="description" content="Vitalis: an engineering mini project exploring heart and kidney disease prediction with explainable machine learning and public healthcare datasets.">
+  <title>Vitalis — Health Intelligence</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#assessment" aria-label="Vitalis home"><span class="brand-icon">✚</span><span>vitalis<span class="brand-dot">.</span><small>HEALTH INTELLIGENCE</small></span></a>
+    <div class="workspace-label">YOUR WORKSPACE</div>
+    <nav aria-label="Main navigation">
+      <a href="#assessment" class="nav-link active"><span data-icon="assessment"></span>Health assessment</a>
+      <a href="#results" class="nav-link"><span data-icon="results"></span>Prediction results</a>
+      <a href="#models" class="nav-link"><span data-icon="models"></span>Model insights<span class="nav-tag">ML</span></a>
+      <a href="#project" class="nav-link"><span data-icon="project"></span>About the project</a>
+    </nav>
+    <div class="sidebar-note"><span class="mini-icon" data-icon="shield"></span><h3>Your data stays here.</h3><p>Predictions run on your device. Entries are never sent to a server or saved by this app.</p><span class="private-label"><i></i> PRIVATE BY DESIGN</span></div>
+    <div class="sidebar-footer"><div class="avatar">AI</div><div><strong>Engineering mini project</strong><small>Healthcare × Machine learning</small></div></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><div class="breadcrumb">Workspace <span>/</span> <strong id="breadcrumb">Health assessment</strong></div><span class="demo-pill"><i></i> Academic prototype</span></header>
+    <main id="main" tabindex="-1">
+      <div id="boot-status" role="status">Loading the trained models…</div>
+      <section id="view-assessment" class="view" hidden>
+        <div class="page-heading"><div><div class="eyebrow">A LITTLE INSIGHT. A BETTER START.</div><h1>A clearer picture of your health<span>.</span></h1><p>Connect the dots between symptoms, history, and clinical data.</p></div><div class="report-actions"><button class="button text-button" id="reset">Reset</button><button class="button secondary" id="load-sample"><span data-icon="flask"></span>Try sample patient</button></div></div>
+        <div class="hero-strip"><div class="hero-mark" data-icon="pulse"></div><div><strong>Early awareness starts with better information.</strong><p>Explore patterns associated with heart and kidney disease using machine learning.</p></div><span class="hero-tag">2 trained models <span>↗</span></span></div>
+        <div class="assessment-layout">
+          <div>
+            <div class="assessment-card">
+              <div class="card-heading"><div><div class="eyebrow muted">NEW ASSESSMENT</div><h2>Let’s start with the basics</h2></div><span class="step-count" id="step-count">Step 1 of 4</span></div>
+              <div class="stepper" role="group" aria-label="Assessment steps" id="stepper"></div>
+              <form id="assessment-form" novalidate autocomplete="off">
+                <div class="section-intro"><h3 id="step-title"></h3><p id="step-description"></p></div>
+                <div id="sample-notice" class="sample-notice" hidden>Fictional sample loaded for demonstration. <button type="button" id="clear-sample">Clear all</button></div>
+                <div id="fields" class="fields"></div>
+                <div id="form-error" class="form-error" role="alert" hidden></div>
+                <div class="form-footer"><span class="local-note"><span data-icon="lock"></span>Processed only on this device</span><div class="form-actions"><button class="button text-button" type="button" id="previous">Back</button><button class="button primary" type="submit" id="next">Continue <span>→</span></button></div></div>
+              </form>
+            </div>
+            <div class="disclaimer"><span data-icon="info"></span><p><strong>For learning, not diagnosis.</strong> These models classify patterns in historical datasets. They do not diagnose disease or predict when it will develop. Consult a qualified clinician about health concerns. For severe chest pain or difficulty breathing, seek emergency care.</p></div>
+          </div>
+          <aside class="assessment-aside">
+            <div class="readiness-card"><div class="aside-heading"><h3>Your assessment</h3><span class="soft-tag" id="assessment-state">Not started</span></div><div class="progress-area"><div class="progress-ring" id="progress-ring"><span id="completion">0<small>%</small></span></div><div><strong id="filled-count">0 of 17 inputs</strong><p>A complete picture helps<br>each model do its job.</p></div></div><div class="checklist" id="checklist"></div><div class="readiness-note">Leave unknown values blank. A model will only produce a score when its required inputs are complete.</div></div>
+            <div class="process-card"><div class="eyebrow muted">BEHIND THE PREDICTION</div><h3>From data to insight.</h3><ol><li><span>01</span><div><strong>Build a health profile</strong><p>Add symptoms, history, and test results.</p></div></li><li><span>02</span><div><strong>Let the models connect</strong><p>Two trained classifiers analyze the inputs.</p></div></li><li><span>03</span><div><strong>Understand the result</strong><p>See model scores and their contributing factors.</p></div></li></ol><a href="#models">Explore the methodology <span>↗</span></a></div>
+            <div class="source-note"><span data-icon="database"></span><p>Built with public healthcare data from the <strong>UCI Machine Learning Repository.</strong></p></div>
+          </aside>
+        </div>
+      </section>
+      <section id="view-results" class="view" hidden></section>
+      <section id="view-models" class="view" hidden></section>
+      <section id="view-project" class="view" hidden></section>
+      <footer class="page-footer"><span>VITALIS <span class="footer-separator">/</span> ACADEMIC RESEARCH PROTOTYPE</span><span>Thoughtful technology. Healthier possibilities.</span></footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" hidden></div>
+  <noscript><div class="noscript">Enable JavaScript to use the on-device prediction models.</div></noscript>
+</body>
+</html>

@@ -1,0 +1,355 @@
+{
+  "version": "1.0.0",
+  "algorithm": "Logistic regression",
+  "seed": 42,
+  "split": "80/20 stratified holdout",
+  "models": [
+    {
+      "id": "heart",
+      "title": "Heart disease",
+      "datasetId": 45,
+      "sourceUrl": "https://archive.ics.uci.edu/dataset/45",
+      "downloadUrl": "https://archive.ics.uci.edu/static/public/45/data.csv",
+      "sha256": "868cd646a53ffbc55611192bae7496911a163937c185710f6b8aa11549b88df1",
+      "originalRows": 303,
+      "adultRows": 303,
+      "trainRows": 242,
+      "testRows": 61,
+      "positiveTrainRows": 111,
+      "features": [
+        {
+          "key": "age",
+          "type": "number",
+          "fill": 56.0,
+          "mean": 54.549586776859506,
+          "scale": 8.978372765440131,
+          "observedRange": [
+            29.0,
+            77.0
+          ],
+          "weights": [
+            0.2232438476074733
+          ]
+        },
+        {
+          "key": "sex",
+          "type": "select",
+          "fill": 1.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.9022114064596657,
+            0.9023493200753009
+          ]
+        },
+        {
+          "key": "cp",
+          "type": "select",
+          "fill": 4.0,
+          "categories": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "observedRange": [
+            1.0,
+            4.0
+          ],
+          "weights": [
+            -0.3937979725606393,
+            -0.376308286835291,
+            -0.4483477445241855,
+            1.2185919175357507
+          ]
+        },
+        {
+          "key": "trestbps",
+          "type": "number",
+          "fill": 130.0,
+          "mean": 130.95867768595042,
+          "scale": 17.58610302878636,
+          "observedRange": [
+            94.0,
+            200.0
+          ],
+          "weights": [
+            0.3396016213454632
+          ]
+        },
+        {
+          "key": "chol",
+          "type": "number",
+          "fill": 244.5,
+          "mean": 249.8388429752066,
+          "scale": 52.737566192586975,
+          "observedRange": [
+            126.0,
+            564.0
+          ],
+          "weights": [
+            0.29995426828048943
+          ]
+        },
+        {
+          "key": "thalach",
+          "type": "number",
+          "fill": 153.5,
+          "mean": 149.96280991735537,
+          "scale": 22.639527461380734,
+          "observedRange": [
+            71.0,
+            202.0
+          ],
+          "weights": [
+            -0.6377605464626593
+          ]
+        },
+        {
+          "key": "exang",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.34510061331477576,
+            0.3452385269304101
+          ]
+        }
+      ],
+      "intercept": -0.8163910196464281,
+      "metrics": {
+        "accuracy": 0.8524590163934426,
+        "recall": 0.8214285714285714,
+        "f1": 0.8363636363636363,
+        "auc": 0.9177489177489178,
+        "confusion": [
+          [
+            29,
+            4
+          ],
+          [
+            5,
+            23
+          ]
+        ]
+      }
+    },
+    {
+      "id": "kidney",
+      "title": "Chronic kidney disease",
+      "datasetId": 336,
+      "sourceUrl": "https://archive.ics.uci.edu/dataset/336",
+      "downloadUrl": "https://archive.ics.uci.edu/static/public/336/data.csv",
+      "sha256": "0eeea8d17f5ad8792d854999d6ddf1602ec4e116616f6ccdfdaef0ba8109e694",
+      "originalRows": 400,
+      "adultRows": 372,
+      "trainRows": 297,
+      "testRows": 75,
+      "positiveTrainRows": 180,
+      "features": [
+        {
+          "key": "age",
+          "type": "number",
+          "fill": 55.0,
+          "mean": 53.138047138047135,
+          "scale": 14.68517428092284,
+          "observedRange": [
+            19.0,
+            83.0
+          ],
+          "weights": [
+            0.4391877591695748
+          ]
+        },
+        {
+          "key": "bgr",
+          "type": "number",
+          "fill": 121.0,
+          "mean": 148.33670033670035,
+          "scale": 80.98327403413192,
+          "observedRange": [
+            70.0,
+            490.0
+          ],
+          "weights": [
+            0.5901818276579851
+          ]
+        },
+        {
+          "key": "bu",
+          "type": "number",
+          "fill": 43.0,
+          "mean": 57.65521885521885,
+          "scale": 49.62729964515446,
+          "observedRange": [
+            10.0,
+            391.0
+          ],
+          "weights": [
+            0.14026217563758725
+          ]
+        },
+        {
+          "key": "sc",
+          "type": "number",
+          "fill": 1.3,
+          "mean": 2.9631313131313135,
+          "scale": 5.6405275882969805,
+          "observedRange": [
+            0.5,
+            76.0
+          ],
+          "weights": [
+            1.449782847200254
+          ]
+        },
+        {
+          "key": "hemo",
+          "type": "number",
+          "fill": 12.649999999999999,
+          "mean": 12.494444444444442,
+          "scale": 2.7741127336564375,
+          "observedRange": [
+            3.1,
+            17.8
+          ],
+          "weights": [
+            -3.3061570523634574
+          ]
+        },
+        {
+          "key": "htn",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -1.2957371992085978,
+            1.2999004023662262
+          ]
+        },
+        {
+          "key": "dm",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.9968540034627364,
+            1.0010172066203662
+          ]
+        },
+        {
+          "key": "cad",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.031368913608825856,
+            0.03553211676645666
+          ]
+        },
+        {
+          "key": "appet",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.8366441073442515,
+            0.8408073105018818
+          ]
+        },
+        {
+          "key": "pe",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.8701210080087702,
+            0.8742842111664014
+          ]
+        },
+        {
+          "key": "ane",
+          "type": "select",
+          "fill": 0.0,
+          "categories": [
+            0,
+            1
+          ],
+          "observedRange": [
+            0.0,
+            1.0
+          ],
+          "weights": [
+            -0.4856471044873871,
+            0.4898103076450178
+          ]
+        }
+      ],
+      "intercept": 5.390819482514437,
+      "metrics": {
+        "accuracy": 0.9466666666666667,
+        "recall": 0.9130434782608695,
+        "f1": 0.9545454545454546,
+        "auc": 0.9760119940029984,
+        "confusion": [
+          [
+            29,
+            0
+          ],
+          [
+            4,
+            42
+          ]
+        ]
+      }
+    }
+  ]
+}

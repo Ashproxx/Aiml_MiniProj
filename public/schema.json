@@ -1,0 +1,19 @@
+[
+  {"key":"age","label":"Age","unit":"years","group":0,"type":"number","min":18,"max":100,"step":1,"hint":"This prototype supports adults only."},
+  {"key":"sex","label":"Sex recorded in dataset","group":0,"type":"select","options":[["0","Female"],["1","Male"]],"hint":"The historical heart dataset records only these two categories."},
+  {"key":"htn","label":"History of hypertension","group":0,"type":"select","options":[["0","No"],["1","Yes"]]},
+  {"key":"dm","label":"History of diabetes","group":0,"type":"select","options":[["0","No"],["1","Yes"]]},
+  {"key":"cad","label":"Known coronary artery disease","group":0,"type":"select","options":[["0","No"],["1","Yes"]]},
+  {"key":"ane","label":"History of anemia","group":0,"type":"select","options":[["0","No"],["1","Yes"]]},
+  {"key":"cp","label":"Chest pain classification","group":1,"type":"select","options":[["1","Typical angina"],["2","Atypical angina"],["3","Non-anginal pain"],["4","Asymptomatic"]],"hint":"Use a clinician's classification; do not self-classify uncertain chest pain."},
+  {"key":"exang","label":"Exercise-induced angina","group":1,"type":"select","options":[["0","No"],["1","Yes"]],"hint":"Use an existing clinical assessment."},
+  {"key":"appet","label":"Appetite","group":1,"type":"select","options":[["0","Good"],["1","Poor"]]},
+  {"key":"pe","label":"Swelling in feet / ankles","group":1,"type":"select","options":[["0","No"],["1","Yes"]],"hint":"Pedal edema, as recorded in the kidney dataset."},
+  {"key":"trestbps","label":"Resting systolic blood pressure","unit":"mmHg","group":2,"type":"number","min":60,"max":260,"step":1},
+  {"key":"thalach","label":"Maximum heart rate on exercise test","unit":"bpm","group":2,"type":"number","min":40,"max":250,"step":1,"hint":"From a supervised stress test. This is not your resting pulse; do not exercise to obtain it."},
+  {"key":"chol","label":"Total cholesterol","unit":"mg/dL","group":3,"type":"number","min":50,"max":700,"step":1},
+  {"key":"bgr","label":"Random blood glucose","unit":"mg/dL","group":3,"type":"number","min":20,"max":700,"step":1,"hint":"Random glucose, not fasting glucose or HbA1c."},
+  {"key":"bu","label":"Blood urea","unit":"mg/dL","group":3,"type":"number","min":1,"max":500,"step":0.1,"hint":"Use blood urea, not blood urea nitrogen (BUN)."},
+  {"key":"sc","label":"Serum creatinine","unit":"mg/dL","group":3,"type":"number","min":0.1,"max":80,"step":0.1},
+  {"key":"hemo","label":"Hemoglobin","unit":"g/dL","group":3,"type":"number","min":2,"max":22,"step":0.1}
+]

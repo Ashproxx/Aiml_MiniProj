@@ -1,0 +1,362 @@
+[
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 59.0,
+      "sex": 1.0,
+      "cp": 4.0,
+      "trestbps": 138.0,
+      "chol": 271.0,
+      "thalach": 182.0,
+      "exang": 0.0
+    },
+    "expected": 0.6044266308258126
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 66.0,
+      "sex": 1.0,
+      "cp": 4.0,
+      "trestbps": 160.0,
+      "chol": 228.0,
+      "thalach": 138.0,
+      "exang": 0.0
+    },
+    "expected": 0.882648520864912
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 51.0,
+      "sex": 0.0,
+      "cp": 3.0,
+      "trestbps": 130.0,
+      "chol": 256.0,
+      "thalach": 149.0,
+      "exang": 0.0
+    },
+    "expected": 0.07198049965917516
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 34.0,
+      "sex": 1.0,
+      "cp": 1.0,
+      "trestbps": 118.0,
+      "chol": 182.0,
+      "thalach": 174.0,
+      "exang": 0.0
+    },
+    "expected": 0.07747788300927923
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 54.0,
+      "sex": 1.0,
+      "cp": 3.0,
+      "trestbps": 150.0,
+      "chol": 232.0,
+      "thalach": 165.0,
+      "exang": 0.0
+    },
+    "expected": 0.29348563237596065
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 60.0,
+      "sex": 0.0,
+      "cp": 3.0,
+      "trestbps": 120.0,
+      "chol": 178.0,
+      "thalach": 96.0,
+      "exang": 0.0
+    },
+    "expected": 0.185941389961509
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 63.0,
+      "sex": 0.0,
+      "cp": 2.0,
+      "trestbps": 140.0,
+      "chol": 195.0,
+      "thalach": 179.0,
+      "exang": 0.0
+    },
+    "expected": 0.03972688177005346
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 74.0,
+      "sex": 0.0,
+      "cp": 2.0,
+      "trestbps": 120.0,
+      "chol": 269.0,
+      "thalach": 121.0,
+      "exang": 1.0
+    },
+    "expected": 0.3652163132664481
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 35.0,
+      "sex": 1.0,
+      "cp": 4.0,
+      "trestbps": 126.0,
+      "chol": 282.0,
+      "thalach": 156.0,
+      "exang": 1.0
+    },
+    "expected": 0.7466440112210884
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 45.0,
+      "sex": 0.0,
+      "cp": 4.0,
+      "trestbps": 138.0,
+      "chol": 236.0,
+      "thalach": 152.0,
+      "exang": 1.0
+    },
+    "expected": 0.4031530864709943
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 62.0,
+      "sex": 1.0,
+      "cp": 2.0,
+      "trestbps": 120.0,
+      "chol": 281.0,
+      "thalach": 103.0,
+      "exang": 0.0
+    },
+    "expected": 0.6981213439018276
+  },
+  {
+    "model": "heart",
+    "inputs": {
+      "age": 58.0,
+      "sex": 0.0,
+      "cp": 1.0,
+      "trestbps": 150.0,
+      "chol": 283.0,
+      "thalach": 162.0,
+      "exang": 0.0
+    },
+    "expected": 0.10391285101185146
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 68.0,
+      "bgr": null,
+      "bu": 28.0,
+      "sc": 1.4,
+      "hemo": 12.9,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 1.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.5542057627086399
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 56.0,
+      "bgr": 139.0,
+      "bu": 15.0,
+      "sc": 1.2,
+      "hemo": 14.8,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.08095262680284429
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 60.0,
+      "bgr": 261.0,
+      "bu": 58.0,
+      "sc": 2.2,
+      "hemo": null,
+      "htn": 1.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.9839489286512549
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 56.0,
+      "bgr": 70.0,
+      "bu": 46.0,
+      "sc": 1.2,
+      "hemo": 15.9,
+      "htn": null,
+      "dm": null,
+      "cad": null,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.015433254513546745
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 41.0,
+      "bgr": null,
+      "bu": 68.0,
+      "sc": 2.8,
+      "hemo": 11.1,
+      "htn": 1.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 1.0,
+      "ane": 1.0
+    },
+    "expected": 0.9993091564637069
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 58.0,
+      "bgr": 131.0,
+      "bu": 18.0,
+      "sc": 1.1,
+      "hemo": 15.8,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.025656313578440476
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 71.0,
+      "bgr": 88.0,
+      "bu": 80.0,
+      "sc": 4.4,
+      "hemo": 11.3,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.9440078811868152
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 41.0,
+      "bgr": 210.0,
+      "bu": 165.0,
+      "sc": 18.0,
+      "hemo": null,
+      "htn": 0.0,
+      "dm": 1.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.9990342239371864
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 70.0,
+      "bgr": 144.0,
+      "bu": 125.0,
+      "sc": 4.0,
+      "hemo": 12.0,
+      "htn": 1.0,
+      "dm": 1.0,
+      "cad": 0.0,
+      "appet": 1.0,
+      "pe": 1.0,
+      "ane": 0.0
+    },
+    "expected": 0.9999698294220182
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 60.0,
+      "bgr": null,
+      "bu": null,
+      "sc": null,
+      "hemo": 16.4,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.01416035768232431
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 23.0,
+      "bgr": 70.0,
+      "bu": 36.0,
+      "sc": 1.0,
+      "hemo": 17.0,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.0014521727866845036
+  },
+  {
+    "model": "kidney",
+    "inputs": {
+      "age": 69.0,
+      "bgr": 256.0,
+      "bu": 40.0,
+      "sc": 1.2,
+      "hemo": null,
+      "htn": 0.0,
+      "dm": 0.0,
+      "cad": 0.0,
+      "appet": 0.0,
+      "pe": 0.0,
+      "ane": 0.0
+    },
+    "expected": 0.8092247988764215
+  }
+]
